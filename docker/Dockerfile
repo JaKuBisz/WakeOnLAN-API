@@ -24,7 +24,7 @@ RUN if [[ ${VS} == "false" ]] ; then echo "Grabbing latest version from pypi.org
 
 # volumes and ports
 VOLUME /config
-EXPOSE 8080
+EXPOSE 9999
 ENV PYTHONUNBUFFERED=1
 
 ENTRYPOINT ["sh", "-c", "wol_api --port=$PORT"]
